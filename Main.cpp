@@ -6,11 +6,12 @@ using namespace std;
 
 int main()
 {
-	setlocale(LC_ALL, "Rus");
+	setlocale(LC_ALL, "ru");
 
 	string Stroka = "–усишь?";
 	int Cifra1 = 0, Cifra2 = 0, Cifra3 = 0;
-	int Summa, Proizv, Srednee;
+	int Summa, Proizv;
+	float Srednee;
 
 	cout << "¬веди 3 числа: ";
 	cout << endl;
@@ -19,7 +20,7 @@ int main()
 
 	Summa = Cifra1 + Cifra2 + Cifra3;
 	Proizv = Cifra1 * Cifra2 * Cifra3;
-	Srednee = Summa / 3;
+	Srednee = (float)Summa / 3;
 
 
 	cout << "—умма: " << Summa << endl;
