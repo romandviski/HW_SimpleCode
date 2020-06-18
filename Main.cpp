@@ -16,7 +16,7 @@ int main()
 	int Cifra1;
 	char Simvol;
 	int var;
-	int index = 1;
+	int index = 0;
 	
 	cout << "Какой символ использовать?" << endl;
 	cin >> Simvol;
@@ -33,14 +33,14 @@ int main()
 	switch (var)
 	{
 	case 1:
-		while (index <= Cifra1)
+		while (index < Cifra1)
 		{
 			cout << Simvol << endl;
 			index++;
 		}
 		break;
 	case 2:
-		while (index <= Cifra1)
+		while (index < Cifra1)
 		{
 			cout << Simvol;
 			index++;
