@@ -14,31 +14,44 @@ int main()
 	setlocale(LC_ALL, "ru");
 
 	int Cifra1;
+	char Simvol;
 	int var;
-	int i = 0;
+	int index = 1;
 	
-	//cout << "Добро пожаловать в программу \"Бомжатский калькулятор\"" << endl << endl;
-	cout << "Сколько строк?" << endl;
+	cout << "Какой символ использовать?" << endl;
+	cin >> Simvol;
+	system("CLS");
+
+	cout << "Сколько символов?" << endl;
 	cin >> Cifra1;
-	cout << endl;
+	system("CLS");
 
-	cout << "Цикл ду ваил" << endl;
-	do
+	cout << "1 если вертикально, 2 если горизонтально =)" << endl;
+	cin >> var;
+	system("CLS");
+
+	switch (var)
 	{
-		cout << "Строка №" << i + 1 << endl;
-		i++;
-	} while (i < Cifra1);
-
-	i = 0;
-
-	cout << endl;
-	cout << "Цикл ваил" << endl;
-	while (i < Cifra1)
-	{
-		cout << "Строка №" << i+1 << endl;
-		i++;
+	case 1:
+		while (index <= Cifra1)
+		{
+			cout << Simvol << endl;
+			index++;
+		}
+		break;
+	case 2:
+		while (index <= Cifra1)
+		{
+			cout << Simvol;
+			index++;
+		}
+		break;
+	default:
+		system("CLS");
+		cout << "Неверный выбор" << endl;
+		break;
 	}
 
-	cout << endl;
+	//system("CLS");
 	//system("pause"); // что бы не закрывалась консоль
 }
